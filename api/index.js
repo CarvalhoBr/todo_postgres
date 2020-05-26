@@ -55,6 +55,7 @@ app.put('/todos/:id', async (req, res) => {
             
     } catch (error) {
         console.error(error.message)
+        res.json(req.body)
     }
 })
 

@@ -4,6 +4,7 @@ export default function InputTodo(){
     
     const [description, setDescription ] = useState('')
 
+    //Adicionando
     const onSubmitForm = async e => {
         e.preventDefault()
         try {
@@ -23,7 +24,7 @@ export default function InputTodo(){
     
     return(
         <Fragment>
-            <h1 className="Text-center mt-5">Pern Todo List</h1>
+            <h1 className="Text-center mt-5">Todo List</h1>
             <form className='d-flex mt-5' onSubmit={onSubmitForm}>
                 <input 
                     type="text" 
